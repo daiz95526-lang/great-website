@@ -1,1 +1,98 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="个人工程项目网站首页总览。" />
+    <title>首页 | 工程项目作品集</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body data-page="home">
+    <header class="site-header">
+      <div class="container header-inner">
+        <a class="brand" href="index.html">Your Name</a>
+        <nav class="main-nav" aria-label="主导航">
+          <a href="index.html" data-nav="home">首页</a>
+          <a href="projects.html" data-nav="projects">项目</a>
+          <a href="about.html" data-nav="about">关于我</a>
+          <a href="contact.html" data-nav="contact">联系</a>
+        </nav>
+      </div>
+    </header>
 
+    <main>
+      <section class="section hero">
+        <div class="container">
+          <p class="eyebrow">工程项目展示 · 首页总览</p>
+          <h1>把项目讲清楚，而不是只堆技术名词</h1>
+          <p class="lead">
+            当前为第一版结构骨架。首页用于展示能力总览，详细技术过程放在独立项目详情页，后续可持续扩展。
+          </p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="projects.html">进入项目列表</a>
+            <a class="btn btn-secondary" href="about.html">了解我</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container">
+          <h2>简介（首页概览）</h2>
+          <p>
+            这里简要说明项目方向与能力标签。详细内容将放入各项目详情页，避免首页信息过载。
+          </p>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container">
+          <h2>项目亮点（概览）</h2>
+          <div class="grid cards-3">
+            <article class="card">
+              <h3>问题定义能力</h3>
+              <p>占位：如何明确工程问题、边界条件与验证指标。</p>
+            </article>
+            <article class="card">
+              <h3>系统化方案</h3>
+              <p>占位：从架构到实现的完整路径，不只展示结果。</p>
+            </article>
+            <article class="card">
+              <h3>复盘与迭代</h3>
+              <p>占位：总结可迁移经验，体现可靠与潜力。</p>
+            </article>
+          </div>
+          <p class="section-link"><a href="projects.html">查看所有项目入口 →</a></p>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container">
+          <h2>技术路线 / 开发过程 / 视频 / 总结（首页摘要）</h2>
+          <p>
+            这些模块在首页只保留摘要。完整内容将统一进入项目详情页模板，确保结构一致、便于后续扩展。
+          </p>
+          <div class="grid cards-2">
+            <article class="card">
+              <h3>详情页模板预览</h3>
+              <p>包含：背景与目标、系统方案、硬件、软件、过程、视频、结果与反思。</p>
+            </article>
+            <article class="card">
+              <h3>推荐浏览路径</h3>
+              <p>首页总览 → 项目列表 → 单个项目详情页。</p>
+            </article>
+          </div>
+          <p class="section-link"><a href="project-detail.html">打开项目详情页骨架 →</a></p>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <p>© <span id="year"></span> Your Name · 工程项目作品集</p>
+        <p>当前阶段：结构骨架（占位内容）</p>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
