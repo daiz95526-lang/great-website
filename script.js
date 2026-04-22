@@ -33,9 +33,11 @@ samePageAnchorLinks.forEach(link => {
 
 // 模块进入视口时轻量淡入上移。
 const revealTargets = document.querySelectorAll('.section, .card, .video-shell, .video-placeholder');
+const initiallyVisible = document.querySelectorAll('.hero, .site-header');
 
 if ('IntersectionObserver' in window) {
   revealTargets.forEach(el => el.classList.add('reveal'));
+  initiallyVisible.forEach(el => el.classList.add('is-visible'));
 
   const observer = new IntersectionObserver(
     entries => {
