@@ -1,33 +1,104 @@
 # PROJECT_BRIEF.md
 
-## Website goal
-Build a simple personal portfolio/project-introduction website.
+## 1) 项目目标（Goal）
+这个网站用于展示我个人完成的工程类小项目，核心目标是让面试官快速认可我的工程能力，从而提高我获得研究生录取或进一步面试机会的概率。
 
-## Current phase
-Phase 1: only build the framework, not the final content.
+## 2) 目标受众（Audience）
+优先级从高到低：
+1. 面试官（第一优先）
+2. 老师 / 导师
+3. 同学与未来协作者
 
-## Target style
-- Clean
-- Engineering style
-- Calm color palette
-- Not too fancy
-- Mobile-friendly
+## 3) 个人能力标签（30 秒内传达）
+访问者应在短时间内感受到我具备：
+- 工程思维
+- 可靠
+- 有潜力
 
-## Required sections
-1. Hero section
-2. About this project
-3. Project highlights
-4. Technical stack / methods
-5. Development process
-6. Results / screenshots placeholder
-7. Reflections / what I learned
-8. Contact / footer
+## 4) 当前阶段范围（Phase 1 Scope）
+当前只做第一版网站骨架，不做复杂功能。
 
-## Constraints
-- Keep everything static for now
-- Use placeholder text where real content is not ready
-- Make content easy to replace later
-- Do not overcomplicate
+范围要求：
+- 使用静态页面
+- 内容先使用占位文本（placeholder）
+- 结构清晰、可直接在浏览器打开
+- 便于后续替换真实项目内容
 
-## Future direction
-This website will later be used to introduce a student engineering project related to automation / control / embedded systems / practical technical work.
+## 5) 页面结构（Information Architecture）
+采用“主页 + 项目详情页”的结构。
+
+### 主页（Home）
+建议包含：
+1. Hero（个人定位 + 核心价值）
+2. 项目分类导航（按技术方向）
+3. 项目列表（卡片）
+4. 简短的关于我 / 工程方法
+5. 联系方式（页脚）
+
+### 项目详情页（Project Detail）
+每个项目至少包含以下模块：
+1. 问题背景
+2. 分析思路
+3. 解决方法
+4. 复盘（经验与改进）
+
+## 6) 展示与分组策略
+项目在主页按“技术方向”进行分组，例如：
+- 自动化
+- 控制
+- 嵌入式
+- 其他工程实践
+
+## 7) 视觉与交互风格（Visual & Motion）
+风格目标：
+- 简洁、克制、有层次感
+- 偏专业工程风格
+- 不花哨
+
+视觉偏好：
+- 深色体系（Dark / 深灰黑为主）
+- 排版清晰、留白合理
+
+动效偏好：
+- 允许轻量动效（如滚动渐显、轻微悬停反馈）
+- 以克制为原则，不做炫技动画
+
+## 8) 技术栈约束（Technical Constraints）
+当前阶段限定：
+- HTML
+- CSS
+- JavaScript
+
+除非用户明确要求，否则不要引入：
+- React
+- Next.js
+- TypeScript
+- 数据库
+- 后端框架
+
+## 9) 内容承载方式（Content Strategy）
+未来内容以 `content/*.md` 方式维护。
+
+目标：
+- 项目描述可独立编辑
+- 页面结构与内容解耦
+- 后续新增项目时尽量少改主页面结构
+
+## 10) 证据型素材规划（Evidence Assets）
+后续项目内容应预留展示位，用于放置：
+- 数据图
+- 流程图
+- 实验截图
+- 测试结果
+- 相关文档链接
+
+## 11) 语言策略（Language）
+当前仅中文版本，不做双语。
+
+## 12) 完成标准（Definition of Done for Phase 1）
+第一版完成时应满足：
+- 可在浏览器直接打开
+- 主页与详情页骨架清晰
+- 占位文本可快速替换
+- 代码对初学者友好、可读性高
+- 后续扩展不需要大改结构

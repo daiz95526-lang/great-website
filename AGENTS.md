@@ -1,48 +1,72 @@
 # AGENTS.md
 
-## Project purpose
-This repository is for a personal project showcase website.
-The goal is to present engineering-related student projects clearly and professionally.
+## 仓库定位
+这是一个用于展示个人工程类项目的网站仓库。
+目标是帮助面试官、老师与导师快速理解项目能力与工程思维。
 
-## Audience
-- Teachers
-- Interviewers
-- Future collaborators
-- Myself for portfolio building
+## 工作总原则
+1. 先理解需求，再改代码。
+2. 每次改动尽量小、可回滚、可解释。
+3. 优先保证结构清晰与可维护性。
+4. 保持初学者可读性，避免过度设计。
 
-## Tech stack
-- Plain HTML, CSS, JavaScript
-- No framework unless explicitly requested
+## 技术栈硬性限制
+当前只允许使用：
+- HTML
+- CSS
+- JavaScript
 
-## Repo structure
-- `index.html`: main page
-- `styles.css`: page styling
-- `script.js`: interactions
-- `content/`: project text content
-- `assets/`: images and icons
-- `docs/`: notes and changelog
+除非用户明确要求，否则禁止引入：
+- React
+- Next.js
+- TypeScript
+- 数据库
+- 后端框架
+- 复杂构建工具链
 
-## Working rules
-- Keep the structure simple and beginner-friendly
-- Do not introduce React, Next.js, TypeScript, bundlers, or databases unless explicitly requested
-- Prefer clear semantic HTML
-- Prefer readable CSS over overly clever solutions
-- Keep JavaScript minimal
-- All text content should be easy to replace later
+## 开发阶段约束（当前阶段）
+当前仅实现第一版骨架：
+- 先完成页面结构
+- 文案可使用占位文本
+- 不提前做复杂交互
+- 不做与当前目标无关的大重构
 
-## Design expectations
-- Clean
-- Modern
-- Technical but not flashy
-- Suitable for a university engineering student portfolio
+## 页面与内容组织要求
+1. 网站采用“主页 + 项目详情页”思路。
+2. 项目以“技术方向”分组展示。
+3. 每个项目详情至少预留：
+   - 问题背景
+   - 分析思路
+   - 解决方法
+   - 复盘
+4. 内容长期采用 `content/*.md` 管理，方便替换与扩展。
 
-## Before making changes
-- First explain the plan briefly
-- Then make the smallest useful change
-- Avoid large unnecessary refactors
+## 视觉与交互要求
+1. 风格：简洁、克制、专业、有层次。
+2. 主色调：深色体系（深灰/黑）。
+3. 动效：可做轻量反馈，但必须克制，不炫技。
 
-## Definition of done
-- The page can be opened directly in a browser
-- Layout is clear
-- Placeholder content is easy to edit later
-- Code remains simple enough for a beginner to understand
+## 代码风格要求（必须遵守）
+1. 使用语义化 HTML 标签。
+2. CSS 命名清晰，避免过深嵌套与技巧化写法。
+3. JavaScript 保持最小必要复杂度。
+4. 注释优先解释“为什么”，而不是重复“做了什么”。
+5. 所有文本与模块应便于未来替换。
+
+## 修改前后流程
+### 修改前
+- 先给出简短计划（做什么、影响哪些文件）。
+- 若需求不明确，先提问确认。
+
+### 修改后
+- 给出简短变更摘要。
+- 说明如何本地打开与检查。
+- 如有权衡，说明取舍原因。
+
+## Definition of Done（每次任务）
+满足以下条件才算完成：
+1. 页面可在浏览器直接打开。
+2. 结构清楚，信息层次明确。
+3. 占位内容易替换。
+4. 代码初学者可理解。
+5. 改动与需求一致，无额外无关重构。
