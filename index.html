@@ -1,1 +1,118 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="个人工程项目网站首页总览。" />
+    <title>首页 | 工程项目作品集</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body data-page="home">
+    <header class="site-header">
+      <div class="container header-inner">
+        <a class="brand" href="index.html#home">Your Name</a>
+        <nav class="main-nav" aria-label="主导航">
+          <a href="index.html#home" data-nav="home">首页</a>
+          <a href="index.html#projects" data-nav="projects">项目</a>
+          <a href="index.html#about" data-nav="about">关于我</a>
+          <a href="index.html#contact" data-nav="contact">联系</a>
+        </nav>
+      </div>
+    </header>
 
+    <main>
+      <section id="home" class="section hero">
+        <div class="container">
+          <p class="eyebrow">工程项目展示 · 首页总览</p>
+          <!-- TODO: 这里替换为你的核心定位（建议一句话：你擅长解决什么工程问题） -->
+          <h1>把项目讲清楚，而不是只堆技术名词</h1>
+          <!-- TODO: 这里替换为个人简介摘要（3~4 句，强调工程思维、可靠性、潜力） -->
+          <p class="lead">
+            当前为第一版结构骨架。首页用于展示能力总览，详细技术过程放在独立项目详情页，后续可持续扩展。
+          </p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="projects.html">进入项目列表</a>
+            <a class="btn btn-secondary" href="project-detail.html">查看详情模板</a>
+          </div>
+        </div>
+      </section>
+
+      <section id="projects" class="section">
+        <div class="container">
+          <h2>项目概览</h2>
+          <!-- TODO: 这里替换为你的项目方向说明（自动化/控制/嵌入式等） -->
+          <p>这里展示项目方向与亮点摘要。后续每个项目会通过详情页完整展开。</p>
+
+          <div class="grid cards-3">
+            <article class="card">
+              <h3>项目背景</h3>
+              <p>占位：这个问题来自哪里？应用场景是什么？为什么值得做？</p>
+            </article>
+            <article class="card">
+              <h3>目标与意义</h3>
+              <p>占位：希望达到什么技术目标？指标或工程价值是什么？</p>
+            </article>
+            <article class="card">
+              <h3>核心功能</h3>
+              <p>占位：系统能做什么关键动作？与已有方案相比优势是什么？</p>
+            </article>
+          </div>
+
+          <div class="grid cards-2">
+            <article class="card">
+              <h3>系统方案 / 软件逻辑（摘要）</h3>
+              <p>占位：首页只放摘要，完整内容在项目详情页统一展开。</p>
+            </article>
+            <article class="card">
+              <h3>开发过程 / 效果展示 / 收获反思（摘要）</h3>
+              <p>占位：把过程、结果和复盘放在详情页，首页保留导航作用。</p>
+            </article>
+          </div>
+
+          <!-- TODO: 新增项目后，优先在 projects.html 增加新卡片，再链接到真实详情页 -->
+          <p class="section-link"><a href="projects.html">查看所有项目入口 →</a></p>
+        </div>
+      </section>
+
+      <section id="video" class="section">
+        <div class="container">
+          <h2>效果展示（视频）</h2>
+          <p>支持后续替换为本地视频文件，或嵌入第三方平台视频。</p>
+
+          <div class="video-shell">
+            <!-- TODO: 本地视频替换点：把 src 改成你的真实视频文件路径 -->
+            <video class="project-video" controls preload="metadata" poster="assets/video-poster-placeholder.jpg">
+              <source src="assets/project-demo-placeholder.mp4" type="video/mp4" />
+              当前浏览器不支持 video 标签，可替换为嵌入视频。
+            </video>
+
+            <!-- TODO: 嵌入视频替换点：可把这个 div 改成 iframe（Bilibili / YouTube） -->
+            <div class="video-embed-placeholder">
+              <p>嵌入视频占位（可替换为 iframe，例如 Bilibili / YouTube）。</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="about" class="section">
+        <div class="container">
+          <h2>关于我（摘要）</h2>
+          <!-- TODO: 这里替换为你的教育背景 + 技术方向 + 工程方法 -->
+          <p>占位：教育背景、技术兴趣、工程方法与合作偏好。</p>
+          <p class="section-link"><a href="about.html">查看完整关于我 →</a></p>
+        </div>
+      </section>
+    </main>
+
+    <footer id="contact" class="site-footer">
+      <div class="container footer-inner">
+        <p>© <span id="year"></span> Your Name · 工程项目作品集</p>
+        <!-- TODO: 这里替换为真实联系方式 -->
+        <p>联系占位：your-email@example.com</p>
+        <p class="section-link"><a href="contact.html">进入联系页 →</a></p>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
