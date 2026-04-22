@@ -98,15 +98,23 @@ ol {
   color: var(--text-muted);
   text-decoration: none;
   font-size: 0.95rem;
+  padding: 0.15rem 0;
+  border-bottom: 1px solid transparent;
 }
 
-.main-nav a:hover {
+.main-nav a:hover,
+.main-nav a.is-active {
   color: var(--text);
+  border-bottom-color: var(--text);
 }
 
 .hero {
   padding-top: 7rem;
   border-top: none;
+}
+
+.page-hero {
+  padding-bottom: 4rem;
 }
 
 .eyebrow {
@@ -168,10 +176,17 @@ ol {
   padding: 1.2rem;
 }
 
-.timeline {
+.project-card .text-link,
+.section-link a,
+.text-link {
+  display: inline-block;
+  margin-top: 0.8rem;
+  color: var(--text);
+  text-decoration: none;
+}
+
+.section-link {
   margin-top: 1rem;
-  display: grid;
-  gap: 0.8rem;
 }
 
 .video-placeholder {
