@@ -10,18 +10,18 @@
   <body data-page="home">
     <header class="site-header">
       <div class="container header-inner">
-        <a class="brand" href="index.html">Your Name</a>
+        <a class="brand" href="index.html#home">Your Name</a>
         <nav class="main-nav" aria-label="主导航">
-          <a href="index.html" data-nav="home">首页</a>
-          <a href="projects.html" data-nav="projects">项目</a>
-          <a href="about.html" data-nav="about">关于我</a>
-          <a href="contact.html" data-nav="contact">联系</a>
+          <a href="index.html#home" data-nav="home">首页</a>
+          <a href="index.html#projects" data-nav="projects">项目</a>
+          <a href="index.html#about" data-nav="about">关于我</a>
+          <a href="index.html#contact" data-nav="contact">联系</a>
         </nav>
       </div>
     </header>
 
     <main>
-      <section class="section hero">
+      <section id="home" class="section hero">
         <div class="container">
           <p class="eyebrow">工程项目展示 · 首页总览</p>
           <h1>把项目讲清楚，而不是只堆技术名词</h1>
@@ -30,23 +30,16 @@
           </p>
           <div class="hero-actions">
             <a class="btn btn-primary" href="projects.html">进入项目列表</a>
-            <a class="btn btn-secondary" href="about.html">了解我</a>
+            <a class="btn btn-secondary" href="project-detail.html">查看详情模板</a>
           </div>
         </div>
       </section>
 
-      <section class="section">
+      <section id="projects" class="section">
         <div class="container">
-          <h2>简介（首页概览）</h2>
-          <p>
-            这里简要说明项目方向与能力标签。详细内容将放入各项目详情页，避免首页信息过载。
-          </p>
-        </div>
-      </section>
+          <h2>项目概览</h2>
+          <p>这里展示项目方向与亮点摘要。后续每个项目会通过详情页完整展开。</p>
 
-      <section class="section">
-        <div class="container">
-          <h2>项目亮点（概览）</h2>
           <div class="grid cards-3">
             <article class="card">
               <h3>问题定义能力</h3>
@@ -61,35 +54,54 @@
               <p>占位：总结可迁移经验，体现可靠与潜力。</p>
             </article>
           </div>
-          <p class="section-link"><a href="projects.html">查看所有项目入口 →</a></p>
-        </div>
-      </section>
 
-      <section class="section">
-        <div class="container">
-          <h2>技术路线 / 开发过程 / 视频 / 总结（首页摘要）</h2>
-          <p>
-            这些模块在首页只保留摘要。完整内容将统一进入项目详情页模板，确保结构一致、便于后续扩展。
-          </p>
           <div class="grid cards-2">
             <article class="card">
-              <h3>详情页模板预览</h3>
-              <p>包含：背景与目标、系统方案、硬件、软件、过程、视频、结果与反思。</p>
+              <h3>技术路线 / 开发过程摘要</h3>
+              <p>首页保留摘要，完整内容将统一进入项目详情页模板，确保结构一致、便于扩展。</p>
             </article>
             <article class="card">
               <h3>推荐浏览路径</h3>
               <p>首页总览 → 项目列表 → 单个项目详情页。</p>
             </article>
           </div>
-          <p class="section-link"><a href="project-detail.html">打开项目详情页骨架 →</a></p>
+
+          <p class="section-link"><a href="projects.html">查看所有项目入口 →</a></p>
+        </div>
+      </section>
+
+      <section id="video" class="section">
+        <div class="container">
+          <h2>视频展示区</h2>
+          <p>支持后续替换为本地视频文件，或嵌入第三方平台视频。</p>
+
+          <div class="video-shell">
+            <video class="project-video" controls preload="metadata" poster="assets/video-poster-placeholder.jpg">
+              <source src="assets/project-demo-placeholder.mp4" type="video/mp4" />
+              当前浏览器不支持 video 标签，可替换为嵌入视频。
+            </video>
+
+            <div class="video-embed-placeholder">
+              <p>嵌入视频占位（可替换为 iframe，例如 Bilibili / YouTube）。</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="about" class="section">
+        <div class="container">
+          <h2>关于我（摘要）</h2>
+          <p>占位：教育背景、技术兴趣、工程方法与合作偏好。</p>
+          <p class="section-link"><a href="about.html">查看完整关于我 →</a></p>
         </div>
       </section>
     </main>
 
-    <footer class="site-footer">
+    <footer id="contact" class="site-footer">
       <div class="container footer-inner">
         <p>© <span id="year"></span> Your Name · 工程项目作品集</p>
-        <p>当前阶段：结构骨架（占位内容）</p>
+        <p>联系占位：your-email@example.com</p>
+        <p class="section-link"><a href="contact.html">进入联系页 →</a></p>
       </div>
     </footer>
 
